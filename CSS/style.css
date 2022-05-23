@@ -1,5 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap');
 
+
+/* Key frames */
+
+@keyframes grow {
+  0%, 100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(1.8);
+    transform: scaleY(1.8);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* --- HOMEPAGE --- */
+/* Loading spinner's animations */
+/* 1ST / Fading-out animation */
+@keyframes dissapear {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    z-index: -100; } }
+/* 2ND / Spinning-out animation */
+@keyframes spinning-animation {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
+/* Fading-out and Spinning-out animations applied to loading spinner */
+/* Position fixed and relative applied for layout purpose */
+.loadingSpinner {
+  animation: dissapear 2400ms both;
+  animation-delay: 1000ms;
+  background-color: #FFF;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999; }
+  .loadingSpinner:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle; }
+  .loadingSpinner__container {
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    border: 15px solid #99E2D0;
+    border-radius: 50%;
+    position: relative;
+    vertical-align: middle;
+    overflow: hidden; }
+  .loadingSpinner__inner {
+    animation: linear spinning-animation 2000ms infinite;
+    background: linear-gradient(150deg, #9356DC, #FF79DA);
+    transform-origin: 100% 100%;
+    border-radius: 50%;
+    height: 50%;
+    width: 50%; }
+
+
+
 body {
   margin: 0;
   padding: 0;
@@ -36,54 +134,7 @@ body, html {
   font-family: "Roboto", sans-serif;
 }
 
-@keyframes grow {
-  0%, 100% {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-  }
-  50% {
-    -webkit-transform: scaleY(1.8);
-    transform: scaleY(1.8);
-  }
-}
-@keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes loader {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fill {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 .main__header h1 {
   text-align: center;
 }
@@ -94,7 +145,7 @@ footer {
   margin: 0;
   border: 0;
   font-size: 100%;
-  padding: 25px;
+  padding: 2px;
   color: white;
 }
 
@@ -106,7 +157,7 @@ footer {
 
 footer h3 {
   font-family: "Shrikhand";
-  padding: 5px 0 2px 35px;
+  padding: 5px 0 0 35px;
   font-weight: 100;
 }
 
@@ -115,6 +166,7 @@ footer a {
 }
 footer ul {
   list-style-type: none;
+  
 }
 footer ul li {
   padding: 5px 0 5px 0;
@@ -246,89 +298,6 @@ footer ul .fa-hands-helping {
 .heart h4 {
   margin: 0;
   font-size: 1.5rem;
-}
-
-.loader {
-  background: -webkit-linear-gradient(#FFFFFF, #99E2D0, #FF79DA, #9356DC);
-  width: 100%;
-  height: 100%;
-  line-height: 100%;
-  font-family: Shrikhand, sans-serif;
-  font-size: x-large;
-  vertical-align: middle;
-  text-align: center;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  animation: loader 1s ease-in-out 3s forwards;
-}
-
-.loader__food {
-  vertical-align: middle;
-  position: absolute;
-  top: 40%;
-  left: 20%;
-}
-@media screen and (min-width: 768px) {
-  .loader__food {
-    top: 40%;
-    left: 35%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .loader__food {
-    top: 40%;
-    left: 45%;
-  }
-}
-
-.loader__food span {
-  display: inline-block;
-  width: 5px;
-  height: 20px;
-  padding-right: 1em;
-}
-
-.loader__fork {
-  vertical-align: middle;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  animation: rotate 1s linear infinite;
-}
-
-.loader__food span:nth-child(1) {
-  animation: grow 1s ease-in-out infinite;
-}
-
-.loader__food span:nth-child(2) {
-  animation: grow 1s ease-in-out 0.15s infinite;
-}
-
-.loader__food span:nth-child(3) {
-  animation: grow 1s ease-in-out 0.15s infinite;
-}
-
-.loader__food span:nth-child(4) {
-  animation: grow 1s ease-in-out 0.15s infinite;
-}
-
-.loader__food span:nth-child(5) {
-  animation: grow 1s ease-in-out 0.15s infinite;
-}
-
-.loader__food span:nth-child(6) {
-  animation: grow 1s ease-in-out 0.15s infinite;
-}
-
-.loader__food span:nth-child(7) {
-  animation: grow 1s ease-in-out 0.15s infinite;
-}
-
-.loader__food span:nth-child(8) {
-  animation: grow 1s ease-in-out 0.15s infinite;
 }
 
 .main__menu {
