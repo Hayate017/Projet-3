@@ -1,33 +1,4 @@
-@keyframes grow{
-  0%,100% {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-  }
 
-  50%{
-    -webkit-transform: scaleY(1.8);
-    transform: scaleY(1.8);
-  }
-}
-@keyframes rotate {
-  from{
-    -webkit-transform: rotate(0deg);
-  }
-  to{
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes loader {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 @keyframes fadein {
   from {
     opacity:0;
@@ -47,3 +18,18 @@
     opacity: 1;
   }
 }
+
+@keyframes dissapear {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    z-index: -100; } }
+
+@keyframes spinning-animation {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
