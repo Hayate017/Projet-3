@@ -1,7 +1,7 @@
 {
   "name": "projet-3",
   "version": "1.0.0",
-  "description": "",
+  "description": "Réalisation du Projet-3: Dynamisez une page web avec des animations CSS du parcours Web Developer d'OpenClassrooms",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./CSS/style.css"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Hayate017/Projet-3.git"
   },
-  "author": "",
+  "author": "Paul-Valentin Blasco",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Hayate017/Projet-3/issues"
