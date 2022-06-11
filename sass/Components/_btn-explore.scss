@@ -1,5 +1,5 @@
-.btn__about button{
-  @include btn-about;
+.btn__explore button{
+  @include btn-explore;
   &:hover {
     background-color: lighten(#9356dc, 10%);
     background-blend-mode: lighten;

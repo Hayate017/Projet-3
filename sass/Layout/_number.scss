@@ -1,5 +1,5 @@
 .number {
-  @include howto-number;
+  @include rule-number;
   @include tablet {
     right: 0;
     top: -15px;

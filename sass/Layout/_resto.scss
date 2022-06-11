@@ -9,14 +9,14 @@
     text-align: center;
   }
 }
-.card {
-  @include card;
+.frame {
+  @include frame;
   @include tablet {
     width: 40%;
   }
 }
-.card img {
-  @include card-img ;
+.frame img {
+  @include frame-img ;
 }
 .main__restaurant {
   background: #f2f2f2;
@@ -45,11 +45,11 @@
   justify-content: space-between;
   align-items: center;
 }
-.card figure {
-  @include card-figure;
+.frame figure {
+  @include frame-figure;
 }
-.card figcaption {
-  @include card-figcaption;
+.frame figcaption {
+  @include frame-figcaption;
 }
 .heart h4 {
   margin: 0;

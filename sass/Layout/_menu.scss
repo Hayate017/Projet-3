@@ -25,8 +25,8 @@
     width: 400px;
   }
 }
-.cross {
-  @include cross;
+.validation {
+  @include validation;
 }
 .line {
   width: 40px;

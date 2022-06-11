@@ -1,4 +1,4 @@
-@import "./Base/reset", "./Base/typography";
+@import "./Base/generalrules", "./Base/typography";
 @import "./Utils/variables", "./Utils/mixins", "./Utils/functions", "./Utils/keyframes", "./Utils/breakpoints";
-@import "./Layout/header", "./Layout/footer", "./Layout/about", "./Layout/howto", "./Layout/resto", "./Layout/loader", "./Layout/menu", "./Layout/operation";
-@import "./Components/maps", "./Components/btn-about", "./Components/btn-card", "./Components/heart-icon", "./Components/menus-header";
+@import "./Layout/header", "./Layout/footer", "./Layout/explore", "./Layout/number", "./Layout/resto", "./Layout/loader", "./Layout/menu", "./Layout/process";
+@import "./Components/localization", "./Components/btn-explore", "./Components/btn-frame", "./Components/heart-icon", "./Components/menus-header";

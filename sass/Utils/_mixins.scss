@@ -1,4 +1,4 @@
-@mixin maps {
+@mixin localization {
   border: none;
   background: #eaeaea;
   font-size: 1rem;
@@ -7,13 +7,13 @@
   text-align: center;
   width: 150px;
 }
-@mixin about {
+@mixin explore {
   background: #f6f6f6;
   text-align: center;
   width: 100%;
   padding: 40px 0;
 }
-@mixin btn-about {
+@mixin btn-explore {
   background-image: $linear-gradient;
   border: 1px solid transparent;
   border-radius: 30px;
@@ -24,7 +24,7 @@
   cursor: pointer;
 }
 
-@mixin howto-number {
+@mixin rule-number {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,7 @@
 
 }
 
-@mixin btn-card {
+@mixin btn-frame {
   color: #008766;
   background: $color-tertiary;
   border: 5px solid $color-tertiary;
@@ -48,14 +48,14 @@
   right: 1%;
   top: 5%;
 }
-@mixin card {
+@mixin frame {
   border-radius: 25px;
   box-shadow: 4px 4px 6px #aaa;
   margin: 20px;
   position: relative;
   background: #fff;
 }
-@mixin card-img {
+@mixin frame-img {
   object-fit: cover;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -63,10 +63,10 @@
   height: 100%;
   max-height: 220px;
 }
-@mixin card-figure {
+@mixin frame-figure {
   margin: 0;
 }
-@mixin card-figcaption {
+@mixin frame-figcaption {
   margin: 0;
   padding: 10px;
 }
@@ -105,7 +105,7 @@
   &:hover {
     padding-right: 75px;
   }
-  &:hover .cross {
+  &:hover .validation {
     opacity: 1;
     transform: translate(-50px);
   }
@@ -114,7 +114,7 @@
   }
 }
 
-@mixin cross {
+@mixin validation {
   display: flex;
   justify-content: center;
   align-items: center;
