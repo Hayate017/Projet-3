@@ -22,8 +22,9 @@
   background: #f2f2f2;
   display: flex;
   flex-direction: column;
+  padding-bottom: 60px;
   h2{
-    padding: 20px;
+    padding: 50px 0px 0px 20px;
     @include desktop{
       text-align: center;
     }
@@ -43,7 +44,7 @@
 .heart {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin: 4px;
 }
 .frame figure {
   @include frame-figure;
@@ -51,10 +52,21 @@
 .frame figcaption {
   @include frame-figcaption;
 }
+
+.frame figcaption p {
+  line-height: 5px;
+  margin: 0px 0px 10px 5px;
+}
+
 .heart h4 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
+
+.heart span .far{
+  margin: 5px 15px 0px 0px;
+}
+
 
 
 
