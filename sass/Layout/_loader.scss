@@ -34,3 +34,67 @@
     border-radius: 50%;
     height: 50%;
     width: 50%; }
+
+/*  ANIMATION - Apparition boutons sélection  */
+.up {
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
+}
+
+.up--1 {
+  -webkit-animation-delay: 200ms;
+  animation-delay: 200ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.up--2 {
+  -webkit-animation-delay: 400ms;
+  animation-delay: 400ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.up--3 {
+  -webkit-animation-delay: 600ms;
+  animation-delay: 600ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.up--4 {
+  -webkit-animation-delay: 750ms;
+  animation-delay: 750ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
