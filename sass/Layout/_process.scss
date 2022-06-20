@@ -8,6 +8,9 @@
 .process__steps {
 	padding-left: 25px;
 	list-style-type: none;
+	@include tablet{
+		margin-left: 20px;
+	}
 	li {
 		display: flex;
 		flex-direction: row;
@@ -30,6 +33,10 @@
 				color: #9356dc;
 			}
 		}
+		@include tablet{
+			padding-right: 35px;
+			margin-right: 35px;
+		}
 	}
 }
 .process__steps--number {
@@ -39,6 +46,9 @@
 	padding: 5px 9px;
 	margin-left: -18px;
 	font-size: 12px;
+	@include desktop{
+		margin-left: -35px;
+	}
 }
 .process__steps--icon {
 	color: grey;
