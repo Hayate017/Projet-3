@@ -1,7 +1,8 @@
 .explore {
   @include explore;
-  h2 {
+  h1 {
     font-weight: bolder;
+    font-size: 25px;
   }
   p {
     color: #4d4d4d;
