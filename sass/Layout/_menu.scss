@@ -7,6 +7,38 @@
     justify-content: space-around;
   }
 }
+
+.starter__title{
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.dish__title{
+  font-size: 12px;
+  padding-left: 10px;
+  margin-top: 50px;
+  @include desktop{
+    margin-top: 0;
+  }
+}
+
+.dessert__title{
+  font-size: 12px;
+  padding-left: 10px;
+  margin-top: 50px;
+  @include desktop{
+    margin-top: 0;
+  }
+}
+
+.meals p{
+  margin: 0;
+}
+
+.information{
+  font-size: 14px;
+}
+
 .starter {
   @include desktop {
     width: 400px;
@@ -28,5 +60,6 @@
 .line {
   width: 40px;
   border: 2px solid $color-tertiary;
-  margin-left: 10px;
+  margin-left: 2px;
+  margin-bottom: 13px;
 }

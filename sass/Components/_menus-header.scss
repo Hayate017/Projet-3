@@ -13,6 +13,7 @@
 .menu__title {
   @include menu-title;
   @include desktop {
+    font-size: 15px;
     padding: 10px 90px;
   }
 }
